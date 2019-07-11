@@ -27,3 +27,20 @@ export function capitalize(word) {
 export function in_array(element, arr) {
     return arr.indexOf(value) > -1;
 }
+
+/**
+    A function to have a smooth scroll to top without using a library
+
+    -- Add this css property ---
+    html {
+        scroll-behavior: smooth;
+    }
+    
+ */
+export function go_to_top() {
+     window.scroll({
+        behavior: 'smooth',
+        left: 0,
+        top: 0
+    });
+}
